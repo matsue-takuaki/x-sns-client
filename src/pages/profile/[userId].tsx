@@ -51,7 +51,7 @@ const UserProfile = ({ profile, posts }: Props) => {
       </div>
       <div className="w-full max-w-xl mx-auto">
         {posts.map((post: PostType) => (
-          <div className="bg-white shadow-md rounded p-4 mb-4">
+          <div className="bg-white shadow-md rounded p-4 mb-4" key={post.id}>
             <div className="mb-4">
               <div className="flex items-center mb-2">
                 <Image
